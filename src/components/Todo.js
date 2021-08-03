@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Todo = props => {
     
     const handleClick = () => {
-        //handleCompleted
+        props.handleCompleted(props.todo.id);
     }
     return(
-        <div>
+        <div onClick={handleClick} className={`${props.todo.completed ? 'completed' : ''}`}>
             <p>{props.todo.title}</p>
         </div>
     );

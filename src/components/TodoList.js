@@ -10,6 +10,9 @@ const TodoList = props => {
             {props.todos.map(todo => (
                 <Todo key={todo.id} todo={todo} />
             ))}
+            <button className='purchased'>
+                Clear Completed
+            </button>
         </div>
     );
 

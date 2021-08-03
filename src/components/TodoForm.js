@@ -25,10 +25,9 @@ class TodoForm extends React.Component {
         return (
             <form>
                 <label>
-                    ToDo:
+                    ToDo: 
                     <input onChange={this.handleChanges} type="text" name="todo" />
-                    <button onSubmit={this.handleClick}> Add </button>
-                    <button> Clear Completed </button>
+                    <button onClick={this.handleClick}> Add </button>
                 </label>   
             </form>
         );
